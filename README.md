@@ -5,7 +5,7 @@ An experiment in building a WebXR experience in a functional programming languag
 Unfortunately I don't have a license to re-publish the assets to host an interactive demo, but here is a video:
 
 Demo:
-![demo](demo/video.mp4)
+![demo](demo/demo.mp4)
 
 ## Technologies Used
 
