@@ -1,0 +1,3 @@
+(library
+ (name Util)
+ (flags -linkall -g))

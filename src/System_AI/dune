@@ -1,0 +1,13 @@
+(library
+ (name System_AI)
+ (libraries
+  EntityManager
+  Util
+  isolinear
+  js_of_ocaml
+  babylon
+  promise_jsoo
+  reactify)
+ (flags -linkall)
+ (preprocess
+  (pps js_of_ocaml-ppx)))

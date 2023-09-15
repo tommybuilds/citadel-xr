@@ -1,0 +1,8 @@
+(library
+ (name noise)
+ (libraries js_of_ocaml)
+ (foreign_stubs
+  (language c)
+  (names bindings))
+ (js_of_ocaml
+  (javascript_files bindings.js)))

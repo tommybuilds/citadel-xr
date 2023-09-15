@@ -1,0 +1,7 @@
+(library
+ (name Citadel_Assets)
+ (libraries Mesh React3d isolinear js_of_ocaml babylon noise ammo
+   promise_jsoo reactify Spring)
+ (flags -linkall)
+ (preprocess
+  (pps js_of_ocaml-ppx)))

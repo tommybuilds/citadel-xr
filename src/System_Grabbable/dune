@@ -1,0 +1,7 @@
+(library
+ (name System_Grabbable)
+ (libraries React3d EntityManager Input Util isolinear js_of_ocaml babylon
+   System_Physics System_Renderable noise ammo promise_jsoo reactify Spring)
+ (flags -linkall)
+ (preprocess
+  (pps js_of_ocaml-ppx)))

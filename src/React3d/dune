@@ -1,0 +1,6 @@
+(library
+ (name React3d)
+ (libraries Mesh Util isolinear js_of_ocaml babylon noise ammo promise_jsoo
+   reactify)
+ (preprocess
+  (pps js_of_ocaml-ppx)))

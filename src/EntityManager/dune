@@ -1,0 +1,7 @@
+(library
+ (name EntityManager)
+ (libraries Util isolinear js_of_ocaml babylon noise ammo promise_jsoo
+   reactify)
+ (flags -linkall)
+ (preprocess
+  (pps js_of_ocaml-ppx)))

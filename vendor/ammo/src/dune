@@ -1,0 +1,8 @@
+(library
+ (name ammo)
+ (libraries js_of_ocaml babylon)
+ (foreign_stubs
+  (language c)
+  (names bindings))
+ (js_of_ocaml
+  (javascript_files bindings.js)))

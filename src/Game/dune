@@ -1,0 +1,15 @@
+(library
+ (name Game)
+ (libraries React3d reactify_web EntityManager Mesh Citadel_Entities
+   System_Camera System_Physics isolinear js_of_ocaml babylon noise ammo
+   promise_jsoo)
+ (js_of_ocaml
+  (flags -pretty -no-inline))
+ ;  (modes js)
+ (preprocess
+  (pps js_of_ocaml-ppx)))
+
+; (install
+;  (package citadel)
+;  (section bin)
+;  (files Engine.bc.js))

@@ -1,0 +1,4 @@
+(library
+ (name ReactifyTest)
+ (flags -linkall -g)
+ (libraries rely.lib reactify))

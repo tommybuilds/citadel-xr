@@ -1,0 +1,4 @@
+(library
+ (name EntityManagerTest)
+ (flags -linkall -g)
+ (libraries rely.lib reactify babylon EntityManager))

@@ -1,0 +1,14 @@
+(executable
+ (name Citadel)
+ (libraries React3d Game EntityManager Citadel_Entities System_Physics
+   isolinear js_of_ocaml babylon noise ammo promise_jsoo)
+ (js_of_ocaml
+  (flags -pretty -no-inline))
+ (modes js)
+ (preprocess
+  (pps js_of_ocaml-ppx)))
+
+(install
+ (package citadel)
+ (section bin)
+ (files Citadel.bc.js))

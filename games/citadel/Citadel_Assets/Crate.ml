@@ -1,0 +1,1 @@
+let mesh = Mesh.mesh (Mesh.Loader.fromFile "assets/crate2_out/crate2.gltf")

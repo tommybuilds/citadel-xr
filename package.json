@@ -1,0 +1,23 @@
+{
+  "name": "citadel",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babylonjs": "^5.0.0",
+    "concurrently": "^6.1.0",
+    "jsdom": "^18.0.1",
+    "live-server": "^1.2.1",
+    "localtunnel": "^2.0.2"
+  },
+  "scripts": {
+    "build:watch": "esy build:watch",
+    "watch": "concurrently -n w:esy-watch,w:http-server \"esy build:watch\" \"live-server --wait=1500 --host=localhost --middleware=../../middleware.js --mount=/assets:assets _build/install/default/bin\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "esy install"
+  },
+  "author": ""
+}

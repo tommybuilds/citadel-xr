@@ -1,0 +1,45 @@
+{
+  "name": "citadel.io",
+  "version": "1.0.0-alpha.0",
+  "license": "MIT",
+  "esy": {
+    "build": [
+      "dune build -p reactify,citadel,citadel-test"
+    ],
+    "buildsInSource": "_build",
+    "install": [
+      "esy-installer reactify.install",
+      "esy-installer citadel.install",
+      "esy-installer citadel-test.install"
+    ]
+  },
+  "scripts": {
+    "build:watch": "dune build --profile=dev -p citadel,reactify -w",
+    "build:prod": "dune build --profile=prod -f citadel",
+    "lint": "dune build @check",
+    "test:native": "esy x RunTests.exe",
+    "test:js": "node _build/install/default/bin/test-runner.js",
+    "check": "dune build @check",
+    "format": "dune build @fmt --auto-promote"
+  },
+  "dependencies": {
+    "@opam/reason": "^3.7.0",
+    "@opam/dune": "*",
+    "@opam/js_of_ocaml": "*",
+    "@opam/js_of_ocaml-ppx": "*",
+    "@opam/promise_jsoo": "*",
+    "@opam/rely": "*",
+    "ocaml": "~4.12"
+  },
+  "resolutions": {
+    "@opam/rely": "../reason-native/rely.opam",
+    "@opam/cli": "../reason-native/cli.opam",
+    "@opam/file-context-printer": "../reason-native/file-context-printer.opam",
+    "@opam/pastel": "../reason-native/pastel.opam"
+  },
+  "devDependencies": {
+    "ocaml": "~4.12",
+    "@opam/ocamlformat": "*",
+    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam#d5ba8b9"
+  }
+}

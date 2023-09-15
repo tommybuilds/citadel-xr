@@ -1,0 +1,6 @@
+(library
+ (name Input)
+ (libraries isolinear js_of_ocaml babylon noise ammo promise_jsoo reactify)
+ (flags -linkall)
+ (preprocess
+  (pps js_of_ocaml-ppx)))

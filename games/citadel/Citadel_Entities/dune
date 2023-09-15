@@ -1,0 +1,26 @@
+(library
+ (name Citadel_Entities)
+ (libraries
+  Mesh
+  React3d
+  Input
+  Citadel_Assets
+  EntityManager
+  System_AI
+  System_Audio
+  System_Camera
+  System_Damage
+  System_Grabbable
+  System_Physics
+  System_Renderable
+  isolinear
+  js_of_ocaml
+  babylon
+  noise
+  ammo
+  promise_jsoo
+  reactify
+  Spring)
+ (flags -linkall)
+ (preprocess
+  (pps js_of_ocaml-ppx)))

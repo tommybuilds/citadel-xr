@@ -1,0 +1,8 @@
+(library
+ (name Editor)
+ (libraries reactify_web EntityManager isolinear js_of_ocaml babylon
+   promise_jsoo)
+ (js_of_ocaml
+  (flags -pretty -no-inline))
+ (preprocess
+  (pps js_of_ocaml-ppx)))

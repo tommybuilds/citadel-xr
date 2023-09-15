@@ -1,0 +1,7 @@
+(library
+ (name System_Camera)
+ (libraries EntityManager Util isolinear js_of_ocaml babylon noise ammo
+   promise_jsoo reactify Spring)
+ (flags -linkall)
+ (preprocess
+  (pps js_of_ocaml-ppx)))

@@ -1,0 +1,4 @@
+(install
+ (package citadel)
+ (section bin)
+ (files index.html perlin.js ammo.wasm.js ammo.wasm.wasm))

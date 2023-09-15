@@ -1,0 +1,8 @@
+(library
+ (name babylon)
+ (libraries js_of_ocaml promise_jsoo)
+ (foreign_stubs
+  (language c)
+  (names bindings))
+ (js_of_ocaml
+  (javascript_files bindings.js)))

@@ -1,0 +1,4 @@
+(library
+ (name BabylonTest)
+ (flags -linkall -g)
+ (libraries rely.lib babylon))

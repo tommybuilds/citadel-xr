@@ -1,0 +1,4 @@
+(library
+ (name AmmoTest)
+ (flags -linkall -g)
+ (libraries rely.lib babylon ammo))

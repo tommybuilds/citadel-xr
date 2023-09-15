@@ -1,0 +1,4 @@
+(library
+ (name IsolinearTestLib)
+ (flags -linkall -g)
+ (libraries isolinear rely.lib))

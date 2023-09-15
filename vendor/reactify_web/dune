@@ -1,0 +1,5 @@
+(library
+ (name reactify_web)
+ (libraries reactify js_of_ocaml Util)
+ (preprocess
+  (pps js_of_ocaml-ppx)))

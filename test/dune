@@ -1,0 +1,12 @@
+(executable
+ (package citadel-test)
+ (name RunTests)
+ (modes js byte native)
+ (public_name RunTests.exe)
+ (libraries EntityManagerTest IsolinearTestLib ReactifyTest BabylonTest
+   AmmoTest))
+
+(install
+ (package citadel-test)
+ (section bin)
+ (files RunTests.bc.js test-runner.js))
