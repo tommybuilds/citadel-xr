@@ -4,7 +4,7 @@ An experiment in building a WebXR experience in a functional programming languag
 
 Unfortunately I don't have a license to re-publish the assets to host an interactive demo, but here is a video:
 
-Demo:
+Demo (in browser, but better in VR):
 
 https://github.com/tommybuilds/citadel-xr/assets/110304079/b846b856-733a-4ced-bbe6-684fdd045340
 
